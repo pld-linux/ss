@@ -1,4 +1,5 @@
 Summary:	Console Screen Saver
+Summary(pl):	Konsolowy wygaszacz ekranu
 Name:		ss
 Version:	0.1
 Release:	0.1
@@ -11,6 +12,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Linux Console Screen Saver by Rebane.
 
+%description -l pl
+Konsolowy wygaszacz ekranu autorstwa Rebane.
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -19,7 +23,7 @@ rm -rf $RPM_BUILD_ROOT
 cp %{SOURCE0} ss.c
 
 %build
-%{__cc} ss.c -o ss
+%{__cc} %{rpmcflags} ss.c -o ss
 
 %install
 rm -rf $RPM_BUILD_ROOT
