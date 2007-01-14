@@ -23,7 +23,7 @@ rm -rf $RPM_BUILD_ROOT
 cp %{SOURCE0} ss.c
 
 %build
-%{__cc} %{rpmcflags} ss.c -o ss
+%{__cc} %{rpmldflags} %{rpmcflags} ss.c -o ss
 
 %install
 rm -rf $RPM_BUILD_ROOT
