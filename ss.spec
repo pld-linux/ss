@@ -1,5 +1,5 @@
 Summary:	Console Screen Saver
-Summary(pl.UTF-8):   Konsolowy wygaszacz ekranu
+Summary(pl.UTF-8):	Konsolowy wygaszacz ekranu
 Name:		ss
 Version:	0.1
 Release:	0.1
