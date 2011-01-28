@@ -15,9 +15,6 @@ Linux Console Screen Saver by Rebane.
 %description -l pl.UTF-8
 Konsolowy wygaszacz ekranu autorstwa Rebane.
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %prep
 %setup -qcT
 cp %{SOURCE0} ss.c
@@ -29,6 +26,9 @@ cp %{SOURCE0} ss.c
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sbindir}
 install ss $RPM_BUILD_ROOT%{_sbindir}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
